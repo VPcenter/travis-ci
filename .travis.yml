@@ -2,5 +2,4 @@ os: windows
 language: sh
 python: 
   - "3.8"
-install: pip3 install --upgrade pip 
 script: python3 app.py || python app.py
