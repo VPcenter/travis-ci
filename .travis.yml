@@ -1,4 +1,4 @@
 os: linux
 python:
   - "3.8.5"
-script: python app.py
+script: pytest
