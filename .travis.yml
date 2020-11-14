@@ -2,4 +2,4 @@ os: windows
 language: sh
 python: 
   - "3.8"
-script: python3 app.py || python app.py
+script: python app.py
