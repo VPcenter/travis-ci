@@ -2,4 +2,6 @@ os: windows
 language: sh
 python: 
   - "3.8"
+notifications:
+  email: false
 script: python app.py
