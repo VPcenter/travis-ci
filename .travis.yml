@@ -1,5 +1,7 @@
 os: linux
 python:
   - "3.8.5"
-install: pip install --user -r requirements.txt
+before_script:
+  - easy_install distribute
+  - pip install -r requirements.txt
 script: python app.py
