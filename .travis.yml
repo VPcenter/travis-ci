@@ -4,4 +4,5 @@ python:
   - "3.8"
 notifications:
   email: false
-script: pytest app.py
+script: 
+  - pytest app.py
