@@ -1,8 +1,11 @@
-os: windows
-language: sh
+language: python
 python: 
-  - "3.8"
+  - 3.8
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
+script: pytest
 notifications:
   email: false
-script: 
-  - pytest app.py
