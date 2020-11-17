@@ -1,8 +1,8 @@
-import sys
+import pytest
 
-from loguru import logger
+def func(x):
+    return x + 1
 
-logger.remove()
-logger.add(sys.stdout, colorize=True, format="<green>{time:YYYY-MM-DD в HH:mm:ss}</green> | <cyan>{level}</cyan> | {message}")
 
-logger.debug("That's it, beautiful and simple logging!")
+def test_answer():
+    assert func(4) == 5
